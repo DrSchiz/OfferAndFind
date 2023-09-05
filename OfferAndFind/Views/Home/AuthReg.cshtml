@@ -1,0 +1,58 @@
+﻿@model OfferAndFindAPI.Models.User
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout";
+}
+
+<h2>Регистрация</h2>
+<h3>@ViewData["Registration"]</h3>
+<form asp-action="Registration" method="post">
+    <div>
+        <label>Фамилия:</label>
+        <input asp-for="@Model.Firstname" name="Firstname" class="form-control"/>
+    </div>
+    <div>
+        <label>Имя:</label>
+        <input asp-for="@Model.Name" name="Name" class="form-control" />
+    </div>
+    <div>
+        <label>Отчество:</label>
+        <input asp-for="@Model.Patronymic" name="Patronymic" class="form-control" />
+    </div>
+    <div>
+        <label>Логин:</label>
+        <input asp-for="@Model.Login" name="Login" required class="form-control" />
+        <span asp-validation-for="Login" />
+    </div>
+    <div>
+        <label>Пароль:</label>
+        <input asp-for="@Model.Password" name="Password" required class="form-control" />
+        <span asp-validation-for="Password" />
+    </div>
+    <div>
+        <label>Почта:</label>
+        <input asp-for="@Model.EMail" name="EMail" required class="form-control" />
+        <span asp-validation-for="EMail" />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary" >Зарегистрироваться</button>
+    </div>
+</form>
+
+<h2>Авторизация</h2>
+<h3>@ViewData["Authorization"]</h3>
+<form asp-action="Authorization" method="post">
+    <div>
+        <label>Логин:</label>
+        <input asp-for="Login" name="Login" required class="form-control" />
+        <span asp-validation-for="Login" />
+    </div>
+    <div>
+        <label>Пароль:</label>
+        <input asp-for="Password" name="Password" required class="form-control" />
+        <span asp-validation-for="Password" />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Войти</button>
+    </div>
+</form>

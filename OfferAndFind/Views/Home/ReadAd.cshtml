@@ -1,0 +1,19 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model OfferAndFindAPI.Models.CollectionDataModel
+@{
+    Layout = "_Layout2";
+}
+@if (Model != null)
+{
+    <div>
+        <div class="card-body">
+            <h3>Разместил: @Model.users.Login</h3>
+            <h4>@Model.ads.Header</h4>
+            <h4>@Model.ads.Text</h4>
+            <h4>Зарплата: @Model.ads.Salary₽</h4>
+            <form asp-action="Response">
+                <button type="submit" class="btn btn-success" name="id" value="@Model.ads.IdAd">Откликнуться</button>
+            </form>
+        </div>
+    </div>
+}

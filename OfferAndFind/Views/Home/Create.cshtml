@@ -1,0 +1,42 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<OfferAndFindAPI.Models.TypeWork>
+@{
+    Layout = "_Layout2";
+}
+<h2>Создание объявления</h2>
+<h2>@TempData["Create"]</h2>
+<form asp-action="AddAd">
+    <div>
+        <label for="Header">Заголовок:</label>
+        <input type="text" class="form-control" name="header" />
+    </div>
+    <div>
+        <label for="Salary">Зарплата:</label>
+        <input type="text" class="form-control" name="salary" />
+    </div>
+    <div>
+        <label for="Text">Текст объявления:</label>
+        <input type="text" class="form-control" name="text" />
+    </div>
+    <div>
+        <input type="radio" name="IdType1" value="1">
+        <label for="typeAd">Предложить работу</label>
+        <input type="radio" name="IdType1" value="2">
+        <label for="typeAd">Найти работу</label>
+    </div>
+    <div>
+        <select name="IdType" class="form-select">
+            <option>Вид работы</option>
+            @if (Model != null)
+            {
+                @foreach (var typeWork in Model)
+                {
+                    <option value="@typeWork.IdType">@typeWork.NameType</option>
+                }
+            }
+        </select>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Создать</button>
+    </div>
+</form>

@@ -1,0 +1,41 @@
+﻿@model OfferAndFindAPI.Models.User
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    Layout = "_Layout2";
+}
+
+<form asp-action="UpdateUser" method="post">
+    <div>
+        <label>Фамилия:</label>
+        <input name="Firstname" class="form-control" value="@Model.Firstname" asp-for="Firstname"/>
+    </div>
+    <div>
+        <label>Имя:</label>
+        <input name="Name" class="form-control" value="@Model.Name" asp-for="Name" />
+    </div>
+    <div>
+        <label>Отчество:</label>
+        <input name="Patronymic" class="form-control" value="@Model.Patronymic" asp-for="Patronymic" />
+    </div>
+    <div>
+        <label>Логин:</label>
+        <input name="Login" required class="form-control" value="@Model.Login" asp-for="Login" />
+    </div>
+    <div>
+        <label>Пароль:</label>
+        <input value="@Model.Password" name="Password" required class="form-control" asp-for="Password"/>
+    </div>
+    <div>
+        <label>Почта:</label>
+        <input name="EMail" required class="form-control" value="@Model.EMail" asp-for="EMail" />
+    </div>
+    <div>
+        <button type="submit" class="btn btn-primary">Редактировать</button>
+    </div>
+</form>
+<form asp-action="UsersAds">
+    <div>
+        <button type="submit" class="btn btn-primary">Ваши объявления</button>
+    </div>
+</form>
+

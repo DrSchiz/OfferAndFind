@@ -1,0 +1,24 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model IEnumerable<OfferAndFindAPI.Models.CollectionDataModel>
+@{
+    Layout = "_Layout2";
+}
+
+@if (Model != null)
+{
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h4>@item.ads.Header</h4>
+                <h4>Зарплата: @item.ads.Salary₽</h4>
+                <form asp-action="ReadUsersAd">
+                    <button type="submit" class="btn btn-dark" value="@item.ads.IdAd" name="Id">Просмотреть</button>
+                </form>
+                <form asp-action="DeleteAd">
+                    <button type="submit" class="btn btn-danger" value="@item.ads.IdAd" name="Iddelete">Удалить</button>
+                </form>
+            </div>
+        </div>
+    }
+}

@@ -1,0 +1,47 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model OfferAndFindAPI.Models.Model1
+@{
+    Layout = "_Layout2";
+}
+<div>
+    <a class="btn btn-danger" href="@Url.Action("Logout")">Выход</a>
+</div>
+<form asp-action="Privacy" method="post">
+    <div class="btn-group">
+        <button type="submit" class="btn btn-primary" name="selectedValue" value="offerAndFind">Все объявления</button>
+        <button type="submit" class="btn btn-primary" name="selectedValue" value="offer">Поиск работы</button>
+        <button type="submit" class="btn btn-primary" name="selectedValue" value="find">Поиск сотрудников</button>
+        <div>
+            <select name="IdType" class="form-select">
+                <option value="0">Все объявления</option>
+                @if (Model != null)
+                {
+                    @foreach (var typeWork in Model.typeWork)
+                    {
+                        <option value="@typeWork.IdType">@typeWork.NameType</option>
+                    }
+                }
+            </select>
+        </div>
+    </div>
+    <div>
+        <button type="submit" class="btn btn-info" name="selectedValue" value="create">Создать объявление</button>
+    </div>
+</form>
+
+@if (Model != null)
+{
+    @foreach (var item in Model.collectionDataModel)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h3>Разместил: @item.users.Login</h3>
+                <h4>@item.ads.Header</h4>
+                <h4>Зарплата: @item.ads.Salary₽</h4>
+                <form asp-action="ReadAd">
+                    <button type="submit" class="btn btn-dark" value="@item.ads.IdAd" name="Id" asp-action="ReadAd">Просмотреть</button>
+                </form>
+            </div>
+        </div>
+    }
+}

@@ -1,0 +1,31 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@model OfferAndFindAPI.Models.Model2
+@{
+    Layout = "_Layout2";
+}
+@if (Model != null)
+{
+    <form asp-action="UpdateAd">
+        <div class="card-body">
+            <div>
+                <label>Заголовок:</label>
+                <input name="Header" class="form-control" value="@Model.collectionDataModel.ads.Header"/>
+            </div>
+            <div>
+                <label>Текст объявления:</label>
+                <input name="Text" class="form-control" value="@Model.collectionDataModel.ads.Text" />
+            </div>
+            <div>
+                <label>Зарплата:</label>
+                <input name="Salary" class="form-control" value="@Model.collectionDataModel.ads.Salary" />
+            </div>
+            <button type="submit" class="btn btn-primary" name="IdAd" value="@Model.collectionDataModel.ads.IdAd">Редактировать</button>
+        </div>
+    </form>
+}
+<h2>Откликнулись:</h2>
+@foreach (var value in Model.collectionDataModel2.Select(x => x.user.EMail)) {
+    <div>
+        <h4>@value</h4>
+    </div>
+}

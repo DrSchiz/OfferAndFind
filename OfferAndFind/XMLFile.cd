@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OfferAndFindAPI.Models.Ad">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAACAgCAAABAAAAAAAAAAAAAAAABACAAAACAAAAAA=</HashCode>
+      <FileName>Models\Ad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.Chat">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgSAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Chat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.CollectionDataModel">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Models\CollectionDataModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.CollectionDataModel2">
+    <Position X="10.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Models\CollectionDataModel2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.Message">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAhAAAAAAAEAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>Models\Message.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.Model1">
+    <Position X="6.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Model1.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.Model2">
+    <Position X="8.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAEAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Model2.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.RoleUser">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\RoleUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.StatusAd">
+    <Position X="5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\StatusAd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.StatusUser">
+    <Position X="6.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\StatusUser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.TypeAd">
+    <Position X="8.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\TypeAd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.TypeMessage">
+    <Position X="10.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\TypeMessage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.TypeWork">
+    <Position X="12" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Models\TypeWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.User">
+    <Position X="5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAGAACAAAAAAQAAAAAAQAACAAABACAAAQAAAAAAA=</HashCode>
+      <FileName>Models\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFindAPI.Models.UserSelectedValue">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAABAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Models\UserSelectedValue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFind.Models.ErrorViewModel">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ErrorViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OfferAndFind.Controllers.HomeController">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIABAAQAAJAAAAAIAIQEAAVAAAAiAAEAEAEA=</HashCode>
+      <FileName>Controllers\HomeController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
